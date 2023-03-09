@@ -62,11 +62,11 @@ class App extends Component {
       
         <ContactFilter value={filter} onContactFilter={ this.onContactFilter} />
         
-        {this.state.contacts.length !== 0 ?
+        {filteredContacts.length !== 0 ?
           <ContactList
             contacts={filteredContacts}
             onClickDelite={this.onClickBtnDeliteContact} /> :
-          <h2 className="Title Nothing-title"> &#9785; you don`t have contacts!</h2>
+          <h2 className="Title Nothing-title">&#9785; you don`t have contacts!</h2>
         }
       </div>
     );

@@ -1,5 +1,9 @@
 .Contacts-container {
+  margin: 0px auto;
   padding: 12px;
+
+  width: 500px;
+
   background-color: #c4c4c4;
 
   border-radius: 6px;
