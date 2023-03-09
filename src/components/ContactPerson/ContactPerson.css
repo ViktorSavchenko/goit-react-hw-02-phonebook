@@ -26,7 +26,7 @@
   align-items: center;
   justify-content: center;
 
-  margin-left: auto;
+  margin-left: 120px;
 
   width: 18px;
   height: 18px;
@@ -55,4 +55,9 @@
 .Contact-number:hover,
 .Contact-number:focus {
   color: #2196f3;
+}
+
+.Contact-wrapper {
+  display: flex;
+  margin-left: auto;
 }

@@ -11,10 +11,11 @@ function ContactPerson({ count, contact, number, id, onClickDelite }) {
       
       <div className="Contact-name">{contact}</div>
       
-      <a href="tel:+380961111111" className="Contact-number">tel: {number}</a>
+      <div className="Contact-wrapper">
+      <a href={`tel: ${number}`} className="Contact-number">tel: {number}</a>
       
       <button className="Contact-delbtn" type="button" onClick = {()=>{onClickDelite(id)}}>X</button>
-      
+      </div>
     </li>
   )
 }
