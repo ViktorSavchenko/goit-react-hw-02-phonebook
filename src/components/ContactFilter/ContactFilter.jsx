@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import './ContactFilter.css';
 
 function ContactFilter({ value, onContactFilter }) { 
@@ -15,6 +16,11 @@ function ContactFilter({ value, onContactFilter }) {
         />
     </label>
   )
+};
+
+ContactFilter.propTypes = {
+  value: PropTypes.string,
+  onContactFilter: PropTypes.func.isRequired
 };
 
 export default ContactFilter;

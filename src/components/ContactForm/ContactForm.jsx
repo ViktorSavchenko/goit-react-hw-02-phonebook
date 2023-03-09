@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 import { nanoid } from 'nanoid'
 import './ContactForm.css'
 
@@ -8,8 +9,8 @@ const INITIAL_STATE = {
 };
 
 class ContactForm extends Component { 
-  state = {...INITIAL_STATE};
-  
+   state = { ...INITIAL_STATE };   
+    
     onInputChange = (e) => {    
     const { name, value } = e.currentTarget;    
   
@@ -74,5 +75,9 @@ class ContactForm extends Component {
     )
   }
 }
+
+ContactForm.propTypes = {
+  submitHandler: PropTypes.func.isRequired
+};
 
 export default ContactForm;

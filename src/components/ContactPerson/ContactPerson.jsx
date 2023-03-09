@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import './ContactPerson.css'
 
 function ContactPerson({ count, contact, number, id, onClickDelite }) {
@@ -17,5 +18,13 @@ function ContactPerson({ count, contact, number, id, onClickDelite }) {
     </li>
   )
 }
+
+ContactPerson.propTypes = {
+  count: PropTypes.number.isRequired,
+  contact: PropTypes.string.isRequired,
+  number: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  onClickDelite: PropTypes.func.isRequired
+};
 
 export default ContactPerson;
