@@ -66,5 +66,5 @@
   display: flex;
   margin-left: auto;
 
-  border-left: 1px solid hsl(220, 75%, 70%, 0.5);
+  border-left: 2px solid #fff;
 }
