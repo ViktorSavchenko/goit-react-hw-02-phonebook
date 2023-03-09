@@ -13,7 +13,6 @@ class App extends Component {
   };
   
   formSubmitHandler = (data) => {
-    console.log(data);
     const isDuplicateName = this.duplicateNameCheck(data.name);
     
      if (isDuplicateName) { 
